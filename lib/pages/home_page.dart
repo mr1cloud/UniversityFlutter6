@@ -78,7 +78,6 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     final width = MediaQuery.sizeOf(context).width;
     final bool wide = width > 600;
-    // Дополнительные вертикальные отступы для десктопа и веб
     final double gap = _isDesktopOrWeb ? 32 : 12;
 
     return Scaffold(
@@ -143,7 +142,7 @@ class HomePage extends StatelessWidget {
           SizedBox(height: gap),
           Expanded(
             child: wide
-                // Ширина > 600: карточки в 2 столбца
+                // Если ширина > 600, то карточки в 2 столбца
                 ? GridView.builder(
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     itemCount: features.length,
