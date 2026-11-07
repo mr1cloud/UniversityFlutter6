@@ -2,9 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../routes.dart';
 
-/// Нижняя панель:
-/// 0 — основной экран;
-/// 1 — профиль.
 class AppNavBar extends StatelessWidget {
   const AppNavBar({super.key, required this.selectedIndex});
 
